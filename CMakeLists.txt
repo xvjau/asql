@@ -7,8 +7,7 @@ project(libasql VERSION 0.52.0 LANGUAGES CXX)
 include(GNUInstallDirs)
 
 find_package(PostgreSQL REQUIRED)
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Core REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} 5.10.0 COMPONENTS Core REQUIRED)
+find_package(QT NAMES Qt6 COMPONENTS Core REQUIRED)
 
 set(CMAKE_AUTOMOC ON)
 
