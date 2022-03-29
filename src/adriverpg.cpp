@@ -17,7 +17,10 @@
 #include <QUuid>
 #include <QtEndian>
 
+#ifdef __unix__
 #include <arpa/inet.h>
+#endif // __unix__
+
 #include <libpq-fe.h>
 
 Q_LOGGING_CATEGORY(ASQL_PG, "asql.pg", QtInfoMsg)
